@@ -4185,9 +4185,9 @@ overwrites them.
 
 ## Listed operators (issuer-only and crypto-only)
 
-Not all operators on Stellar operate fiat ramps. Many reputable operators issue tokens or operate crypto-to-crypto rails on Stellar without offering fiat deposit or withdrawal. To provide transparency across the broader Stellar ecosystem without confusing users, these operators are catalogued in the **listed-anchor registry** (`constants/listed-anchors/`) and surfaced in the [Anchor Directory](/anchors/directory).
+Not all operators on Stellar operate fiat ramps. Many reputable operators issue tokens or operate crypto-to-crypto rails on Stellar without offering fiat deposit or withdrawal. To provide transparency across the broader Stellar ecosystem without confusing users, these operators are catalogued in the **listed-anchor registry** (`constants/listed-anchors/`) and marked on the matching rows of the Anchor Directory (`/anchors/directory`): a row whose domain belongs to a listed operator carries its `listedAnchorId` and `listedKind`, and `crypto-rails` operators show a "Crypto only" badge. The directory does not read the registry directly, so an operator appears there only when its domain is in the survey results.
 
-> **Listed operators are never quoted or routed.** Listed operators are excluded from corridor routing, rate queries, the swap/payment engine, and MCP tools. They are tracked for ecosystem visibility and directory completeness only.
+> **Listed operators are never quoted or routed.** Listed operators are excluded from corridor routing, rate queries, the swap/payment engine, and MCP tools. They are tracked for ecosystem visibility only.
 
 ### Decision rule: where does an operator belong?
 
