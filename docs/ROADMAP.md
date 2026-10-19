@@ -494,7 +494,7 @@ milestone](#v2-scope-with-no-milestone) — real decomposition, unscheduled.
   `tests/multisig.rs`); 2-of-3 threshold pending
 - [x] Publisher whitelist management (`add_publisher` / `revoke_publisher` / `list_publishers`) — `publishers.rs`
 - [ ] `publish_outcome` — full signature verification + idempotency
-- [x] `recent_outcomes` + `get_corridor_aggregate` (and `_v2`) public reads — `lib/oracle/read.ts`
+- [x] `get_corridor_aggregate` (and `_v2`) public reads — `lib/oracle/read.ts`; `recent_outcomes` — `crates/stellar-intel-reputation`
 - [ ] 7-day time-locked upgrade path
 - [ ] `#189` Publisher service (production key rotation, health endpoint)
 - [ ] `#190–#192` Publisher retries, dead-letter, Sentry wiring
